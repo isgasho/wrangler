@@ -38,6 +38,7 @@ pub fn preview(
         "__ew_fiddle_preview={}{}{}{}",
         script_id, session, https, preview_host
     );
+    println!("cookie: {}", &cookie);
 
     let method = method.unwrap_or_default();
 
